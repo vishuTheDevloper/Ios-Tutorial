@@ -4,33 +4,42 @@ Just Use
 
 For FaceBook
 Setup the project on Facebook Developer Account
+
 get Plist data and save onto your project 
 
- FacebookSignInHelper.shared.facebookSignIn(with: self) { fbData in
+ FacebookSignInHelper.shared.facebookSignIn(with: self) 
+ { fbData in
             // fetch your all data from fbData
             for example fbData.name and so on 
         }
+        
         
  ###################################################################       
 For Apple
 Just add Capability of Apple Signin 
 
- AppleLoginHelper.shared.AppleSignIn(with: self) { appleData in
+ AppleLoginHelper.shared.AppleSignIn(with: self) 
+ { appleData in
             // fetch your all data from appleData
             for example appleData.name and so on  
         }
+        
+        
 ####################################################################        
 For Google 
 Setup Account On Firebase For Login GEt Client Add and reverse Client Id 
 
 put ClientId In Google Signin Helper File and reverse Client Id in Plist File According to Firebase Doc
- GoogleSignInHelper.shared.googleSignIn(with: self) { gdata in
+ GoogleSignInHelper.shared.googleSignIn(with: self) 
+ { gdata in
             // fetch your all data from gdata
             for example gdata.name and so on    
         }
         
-        
+   
+   
 If You Are Unable to know where to put plist Data and all in Google and facebool just open .plist File as Source Code put the code Below and replace the data Where ever is Required denoted as #####
+
 
 <key>CFBundleURLTypes</key>
     <array>
