@@ -1,0 +1,6 @@
+framework module Pods_SocialLoginIntegrationSingleton {
+  umbrella header "Pods-SocialLoginIntegrationSingleton-umbrella.h"
+
+  export *
+  module * { export * }
+}

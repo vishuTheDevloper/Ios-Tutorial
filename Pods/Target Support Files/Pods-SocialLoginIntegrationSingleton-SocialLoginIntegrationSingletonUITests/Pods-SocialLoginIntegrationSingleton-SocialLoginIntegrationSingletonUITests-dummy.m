@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_SocialLoginIntegrationSingleton_SocialLoginIntegrationSingletonUITests : NSObject
+@end
+@implementation PodsDummy_Pods_SocialLoginIntegrationSingleton_SocialLoginIntegrationSingletonUITests
+@end

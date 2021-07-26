@@ -6,15 +6,42 @@
 //
 
 import UIKit
-
+import GoogleSignIn
+import FBSDKLoginKit
+import  FBSDKCoreKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        ApplicationDelegate.shared.application(
+            application,
+            didFinishLaunchingWithOptions:
+            launchOptions
+        )
         // Override point for customization after application launch.
         return true
+    }
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+
+//        if AppDefaults.LoginBy == "google"{
+//            return  GIDSignIn.sharedInstance().handle(url)
+//        }
+//        else if AppDefaults.LoginBy == "facebook"{
+            return    ApplicationDelegate.shared.application(
+                UIApplication.shared,
+                open: url,
+                sourceApplication: sourceApplication,
+                annotation: [UIApplication.OpenURLOptionsKey.annotation]
+            )
+//        }
+//        else {
+//            return Auth.auth().canHandle(url)
+//        }
+
+
+
     }
 
     // MARK: UISceneSession Lifecycle
