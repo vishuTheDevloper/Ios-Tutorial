@@ -1,9 +1,4 @@
-//
-//  GoogleSignInHelper.swift
-//
-//  Created by samir on 01/10/19.
-//  Copyright © 2019 samir. All rights reserved.
-//
+
 
 import UIKit
 import GoogleSignIn
@@ -19,7 +14,7 @@ class GoogleSignInHelper: NSObject{
     func googleSignIn(with view: UIViewController,completion : @escaping (SocialSignInModel?) -> ()){
         
         // Insert Client Id here
-        GIDSignIn.sharedInstance().clientID = "590846275302-ks92tmnd4oj7nq08rc6nq5stsqbaqimb.apps.googleusercontent.com"
+        GIDSignIn.sharedInstance().clientID = "Insert Here Please"
         self.presentationController = view
         self.completion = completion
         GIDSignIn.sharedInstance().delegate = self

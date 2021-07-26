@@ -1,9 +1,4 @@
-//
-//  AppleLoginHelper.swift
-//  SocialLoginIntegrationSingleton
-//
-//  Created by john on 26/07/21.
-//
+
 import AuthenticationServices
 import CryptoKit
 import Foundation

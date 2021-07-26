@@ -1,9 +1,4 @@
-//
-//  FacebookSignInHelper.swift
-//
-//  Created by samir on 01/10/19.
-//  Copyright © 2019 samir. All rights reserved.
-//
+
 
 import UIKit
 import FBSDKCoreKit
